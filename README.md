@@ -18,7 +18,7 @@ Ensure you have the following installed:
 - **pip**
 
 ### Step 1: Clone the Repository
-### Step 2: Update requ
+### Step 2: Update requirements and API key, model and bases url in properties.env file based on access
 ### Step 3: Run docker to host application
 ```
 docker run -p 9090:9090 rental-comparator 
@@ -37,7 +37,7 @@ docker build -t rental_comparator .
 
 **Step 2:** Run the Container
 ```bash
-docker run --env-file properties.env -p 9090:9090 rental_comparator
+docker run --env-file ./config/properties.env -p 9090:9090 rental_comparator
 ```
 
 ### Option 2: Run Locally
@@ -77,7 +77,7 @@ curl -X POST "http://localhost:9090/rent_agreement_comparator" \
 ├── config/
 │   └── properties.env      # Environment variables file
 ├── test/
-│   └── test.py      # unittest 
+│   └── test.py      # sample unittest file
 │
 ├── requirements.txt    # Python dependencies
 ├── Dockerfile          # Docker build instructions
