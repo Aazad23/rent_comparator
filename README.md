@@ -99,11 +99,4 @@ curl -X POST "http://localhost:9090/rent_agreement_comparator" \
 
 ---
 
-## Contributing
-If you'd like to contribute, please fork the repository and create a pull request. For major changes, please open an issue to discuss what you would like to improve.
-
----
-
-## License
-This project is licensed under the [MIT License](LICENSE).
 
